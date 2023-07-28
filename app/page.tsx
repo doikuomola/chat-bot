@@ -22,7 +22,7 @@ export default function Home() {
   return (
     <div className="bg-neutral-800 min-h-screen">
       {messages.length !== 0 ? (
-        <div className="p-32 pt-5 space-y-5 w-[75%] mx-auto relative">
+        <div className="p-2 md:p-32 pt-5 space-y-5 w-[95%] md:w-[75%] mx-auto relative">
           {messages.map((message) => (
             <div className="w-full" key={message.id}>
               {message.role === 'user' ? (
